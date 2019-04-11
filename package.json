@@ -8,6 +8,7 @@
     "babel-start": "nodemon --exec babel-node -- ./bin/www"
   },
   "dependencies": {
+    "babel-cli": "^6.26.0",
     "body-parser": "^1.18.3",
     "cookie-parser": "~1.4.4",
     "debug": "~4.1.1",
