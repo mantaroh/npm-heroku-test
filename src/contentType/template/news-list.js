@@ -12,13 +12,13 @@ class HeadlesCMSNewsList extends HTMLElement {
 
     // This style will be applied whole of this custom elements.
     let style = document.createElement('style');
-    style.textContent =  \`
+    style.textContent =  `
       .wrapper {
         background-color: grey;
         width: 80%;
         margin: 0 auto 0 auto;
         border: dashed 3px;
-      }\`;
+      }`;
 
     // Append child element based on the received json data from API server.
     try {
@@ -47,4 +47,4 @@ class HeadlesCMSNewsList extends HTMLElement {
 }
 
 // Register the custom element.
-customElements.define('headless-news-list', headlesCMSNewsList);
+customElements.define('headless-news-list', HeadlesCMSNewsList);

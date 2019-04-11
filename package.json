@@ -1,5 +1,5 @@
 {
-  "name": "example for generating the javascript code",
+  "name": "jsCodeGenerator",
   "version": "0.1.0",
   "private": true,
   "scripts": {

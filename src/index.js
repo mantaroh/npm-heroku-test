@@ -37,7 +37,7 @@ router.get('/', function(req, res, next) {
     return;
   }
 
-  res.send({ "generatedJS": generatedJS });
+  res.send({ generatedJS });
 });
 
 module.exports = router;
