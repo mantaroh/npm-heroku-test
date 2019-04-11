@@ -1,20 +1,38 @@
 {
-  "name": "sample",
-  "version": "0.0.0",
+  "name": "example for generating the javascript code",
+  "version": "0.1.0",
   "private": true,
   "scripts": {
-    "start": "node ./bin/www"
+    "start": "node ./bin/www",
+    "server": "babel-node ./bin/www",
+    "babel-start": "nodemon --exec babel-node -- ./bin/www"
   },
   "dependencies": {
-    "cookie-parser": "~1.4.3",
-    "debug": "~2.6.9",
-    "express": "~4.16.0",
-    "http-errors": "~1.6.2",
+    "babel": "^6.23.0",
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-es2015": "^6.24.1",
+    "body-parser": "^1.18.3",
+    "cookie-parser": "~1.4.4",
+    "debug": "~4.1.1",
+    "express": "~4.16.4",
+    "harp-minify": "^0.4.0",
+    "http-errors": "~1.7.2",
     "jade": "~1.11.0",
-    "morgan": "~1.9.0"
+    "morgan": "~1.9.1",
+    "nodemon": "^1.18.11",
+    "shift-codegen": "^6.0.0",
+    "shift-parser": "^6.0.1",
+    "uglify-js": "^3.5.4"
   },
   "engines": {
     "node": "10.7.0",
     "npm": "6.4.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.4.3",
+    "@babel/core": "^7.4.3",
+    "@babel/node": "^7.2.2",
+    "@babel/preset-env": "^7.4.3"
   }
 }
